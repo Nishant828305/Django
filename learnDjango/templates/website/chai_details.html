@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+ {% block title %} 
+ chai Details 
+ {% endblock %}
+ 
+{%block content %}
+<h1 >chai detail page</h1>
+<p>{{chai.description}}</p>
+<h2>{{chai.name}}</h2>
+<img src="{{ chai.image.url }}" alt="{{ chai.name }}">
+{% endblock %}
